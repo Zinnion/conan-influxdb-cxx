@@ -6,11 +6,11 @@ import os
 
 class InfluxConan(ConanFile):
     name = "influxdb-cxx"
-    version = "0.2.0"
-    description = "Simple high-performance implementation of several scalability protocols"
+    version = "0.2.3"
+    description = "Influxdb client"
     topics = ("conan", "influx", "timeseries")
     url = "https://github.com/zinnion/conan-influxdb-cxx"
-    homepage = "https://github.com/awegrzyn/influxdb-cxx"
+    homepage = "https://github.com/zinnion/influxdb-cxx"
     author = "Zinnion <mauro@zinnion.com>"
     license = "MIT"
     exports = ["LICENSE.md"]
@@ -23,6 +23,8 @@ class InfluxConan(ConanFile):
     options = {
        "shared": [True, False]
     }
+    requires = "OpenSSL/1.1.1d@zinnion/stable", "boost/1.71.0@zinnion/stable", "zlib/1.2.11@zinnion/stable"
+    #requires = "OpenSSL/1.1.1d@zinnion/stable", "zlib/1.2.11@zinnion/stable"
 
     default_options = (
         "shared=False"

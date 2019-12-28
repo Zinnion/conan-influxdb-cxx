@@ -1,0 +1,61 @@
+[settings]
+    arch=x86_64
+    build_type=Debug
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=8
+    os=Linux
+
+[requires]
+    OpenSSL/1.Y.Z
+    zlib/1.Y.Z
+
+[options]
+    shared=False
+
+[full_settings]
+    arch=x86_64
+    build_type=Debug
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=8
+    os=Linux
+
+[full_requires]
+    OpenSSL/1.1.1d@zinnion/stable:9c111a8074926a7147291383e3d366f41bac77b3
+    zlib/1.2.11@zinnion/stable:761432f3453a17c960259b5b2605153e3bcffd7d
+
+[full_options]
+    shared=False
+    OpenSSL:386=False
+    OpenSSL:no_asm=False
+    OpenSSL:no_async=False
+    OpenSSL:no_bf=False
+    OpenSSL:no_cast=False
+    OpenSSL:no_des=False
+    OpenSSL:no_dh=False
+    OpenSSL:no_dsa=False
+    OpenSSL:no_dso=False
+    OpenSSL:no_fpic=False
+    OpenSSL:no_hmac=False
+    OpenSSL:no_md2=False
+    OpenSSL:no_md5=False
+    OpenSSL:no_mdc2=False
+    OpenSSL:no_rc2=False
+    OpenSSL:no_rc4=False
+    OpenSSL:no_rc5=False
+    OpenSSL:no_rsa=False
+    OpenSSL:no_sha=False
+    OpenSSL:no_sse2=False
+    OpenSSL:no_threads=False
+    OpenSSL:no_zlib=False
+    OpenSSL:shared=False
+    zlib:fPIC=True
+    zlib:minizip=False
+    zlib:shared=False
+
+[recipe_hash]
+
+
+[env]
+
