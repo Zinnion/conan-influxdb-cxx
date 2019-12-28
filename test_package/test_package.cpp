@@ -1,7 +1,7 @@
-#include <InfluxDBFactory.h>
-
-int main(int argc, char **argv)
+#include <iostream>
+using namespace std;
+int main() 
 {
-
-        return 0;
+    cout << "Hello, World!";
+    return 0;
 }
